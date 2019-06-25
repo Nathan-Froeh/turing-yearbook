@@ -33,9 +33,14 @@ class App extends Component {
   }
 
   addStudent = (name, quote, superlative) => {
-    console.log(people.students)
-    people.students.push({id: Date.now(), name: name, quote: quote, superlative: superlative, photo: 'https://placekitten.com/200/300'})
-    console.log(people.students)
+
+    this.state.group.push({
+      id: Date.now(), 
+      name: name, 
+      quote: quote, 
+      superlative: superlative, 
+      photo: 'https://placekitten.com/200/300'})
+
   }
 
   render() {
@@ -43,8 +48,8 @@ class App extends Component {
     return (
       <div className='App'>
         {!this.state.isHidden && <AddPerson 
-                                  addStudent={this.addStudent} 
-                                  hide={this.handleAdd}/>}
+          addStudent={this.addStudent} 
+          hide={this.handleAdd}/>}
         <header className='App-header'>
         <h1>Turing Yearbook</h1>
         <div className='selectors'>

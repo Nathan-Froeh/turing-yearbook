@@ -17,3 +17,22 @@ article {
   object-fit: cover;
   border-radius: 20px;
 }
+
+h2,
+h3 {
+  font-size: 15px;
+  margin: 5px;
+}
+
+h2 {
+  color: #FF6347;
+}
+
+p {
+  font-size: 12px;
+  margin: 5px;
+}
+
+h3 {
+  color: #6495EC;
+}
