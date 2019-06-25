@@ -1,6 +1,7 @@
 html {
   height: 100%;
   overflow: hidden;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,7 +21,25 @@ body {
 }
 
 h1 {
+  margin: 0;
   background-color: rgba(255, 255, 255, 0.95);
   padding: 10px;
   color: limegreen;
+}
+
+.selectors {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  padding-right: 40px;
+}
+
+.group-selector {
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#add-student-icon {
+  height:30px;
+  width: 30px;
 }

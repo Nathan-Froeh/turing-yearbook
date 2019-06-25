@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Cohort from './Cohort';
 import people from '../data/yearbook-data.js';
+import AddPerson from './AddPerson.jsx'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +9,8 @@ class App extends Component {
     super();
     this.state = {
       group: people.staff,
-      groupType: 'Staff'
+      groupType: 'Staff',
+      isHidden: true
     }
   }
 
@@ -26,14 +28,43 @@ class App extends Component {
     }
   }
 
+  handleAdd = () => {
+    this.setState({isHidden: !this.state.isHidden})
+  }
+
+  addStudent = (name, quote, superlative) => {
+    console.log(people.students)
+    people.students.push({id: Date.now(), name: name, quote: quote, superlative: superlative, photo: 'https://placekitten.com/200/300'})
+    console.log(people.students)
+  }
+
   render() {
     console.log('Render App')
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className='App'>
+        {!this.state.isHidden && <AddPerson 
+                                  addStudent={this.addStudent} 
+                                  hide={this.handleAdd}/>}
+        <header className='App-header'>
         <h1>Turing Yearbook</h1>
-        <button onClick={()=>this.setGroup('staff')}>Staff</button>
-        <button onClick={()=>this.setGroup('students')}>Students</button>
+        <div className='selectors'>
+          <button 
+            className='group-selector' 
+            onClick={()=>this.setGroup('staff')}>
+            Staff
+          </button>
+          <button 
+            className='group-selector' 
+            onClick={()=>this.setGroup('students')}>
+            Students
+          </button>
+          <img 
+            id='add-student-icon'
+            src='./add-user-button.png' 
+            alt='Add student icon'
+            onClick={this.handleAdd}
+          />
+        </div>
         </header>
         <Cohort group={this.state.group} groupType={this.state.groupType}/>
       </div>

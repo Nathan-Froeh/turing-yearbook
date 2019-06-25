@@ -4,13 +4,13 @@ import './Cohort.css';
 
 // COHORT COMPONENT CODE GOES HERE
 
-function Cohort(props) {
+function Cohort({group, groupType}) {
   console.log('Render Cohort')
-  const groupMembers = props.group.map(person => <Person person={person} key={person.id}/>)
+  const groupMembers = group.map(person => <Person person={person} key={person.id}/>)
 
   return (
     <main>
-      <h1>{props.groupType}</h1>
+      <h1>{groupType}</h1>
       <section className='people'>
       {groupMembers}
       </section>
