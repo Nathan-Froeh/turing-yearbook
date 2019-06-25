@@ -7,15 +7,22 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      group: people.staff
+      group: people.staff,
+      groupType: 'Staff'
     }
   }
 
   setGroup = (group) => {
     if(group === 'staff') {
-      this.setState({group: people.staff})
+      this.setState({
+        group: people.staff,
+        groupType: 'Staff'
+      })
     } else {
-      this.setState({group: people.students})
+      this.setState({
+        group: people.students,
+        groupType:'Students'
+      })
     }
   }
 
@@ -28,7 +35,7 @@ class App extends Component {
         <button onClick={()=>this.setGroup('staff')}>Staff</button>
         <button onClick={()=>this.setGroup('students')}>Students</button>
         </header>
-        <Cohort group={this.state.group}/>
+        <Cohort group={this.state.group} groupType={this.state.groupType}/>
       </div>
     );
   }

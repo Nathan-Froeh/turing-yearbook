@@ -6,13 +6,13 @@ import './Cohort.css';
 
 function Cohort(props) {
   console.log('Render Cohort')
-  const staffMembers = props.group.map(person => <Person person={person} key={person.id}/>)
+  const groupMembers = props.group.map(person => <Person person={person} key={person.id}/>)
 
   return (
     <main>
-      <h1>Staff</h1>
+      <h1>{props.groupType}</h1>
       <section className='people'>
-      {staffMembers}
+      {groupMembers}
       </section>
     </main>
   )
