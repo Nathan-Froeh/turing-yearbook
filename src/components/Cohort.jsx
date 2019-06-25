@@ -6,7 +6,7 @@ import './Cohort.css';
 
 function Cohort(props) {
   console.log('Render Cohort')
-  const staffMembers = props.staff.map(person => <Person person={person} key={person.id}/>)
+  const staffMembers = props.group.map(person => <Person person={person} key={person.id}/>)
 
   return (
     <main>

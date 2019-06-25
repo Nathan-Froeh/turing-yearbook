@@ -7,19 +7,28 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      staff: people.staff,
-      students: people.students
+      group: people.staff
+    }
+  }
+
+  setGroup = (group) => {
+    if(group === 'staff') {
+      this.setState({group: people.staff})
+    } else {
+      this.setState({group: people.students})
     }
   }
 
   render() {
-    console.log(this.state.staff)
+    console.log('Render App')
     return (
       <div className="App">
         <header className="App-header">
         <h1>Turing Yearbook</h1>
+        <button onClick={()=>this.setGroup('staff')}>Staff</button>
+        <button onClick={()=>this.setGroup('students')}>Students</button>
         </header>
-        <Cohort staff={this.state.staff} students={this.state.students}/>
+        <Cohort group={this.state.group}/>
       </div>
     );
   }
