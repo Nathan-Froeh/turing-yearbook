@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+article {
+  height: 350px;
+  width: 260px;
+  background: white;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 10px;
+}
+
+img {
+  height: 230px;
+  width: 190px;
+  object-fit: cover;
+  border-radius: 20px;
+}
