@@ -32,5 +32,22 @@ describe('AddPerson', () => {
     expect(wrapper.state()).toEqual(expected)
   })
 
-  
+  it('quote input should run handleChange ok keystroke', () => {
+    const mockEvent = {
+      target: {
+        name: 'quote',
+        value: 'I am Batman'
+      },
+      preventDefault: jest.fn()
+    }
+    const expected = {
+      name: '',
+      quote: 'I am Batman',
+      superlative: ''
+    }
+    wrapper.instance().handleChange(mockEvent)
+    expect(wrapper.state()).toEqual(expected)
+
+  })
+
 }) 
