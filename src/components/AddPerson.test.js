@@ -32,7 +32,7 @@ describe('AddPerson', () => {
     expect(wrapper.state()).toEqual(expected)
   })
 
-  it('quote input should run handleChange ok keystroke', () => {
+  it('quote input should run handleChange on keystroke', () => {
     const mockEvent = {
       target: {
         name: 'quote',
@@ -47,7 +47,37 @@ describe('AddPerson', () => {
     }
     wrapper.instance().handleChange(mockEvent)
     expect(wrapper.state()).toEqual(expected)
+  })
 
+  it('superlative input should run handleChange on keystroke', () => {
+    const mockEvent = {
+      target: {
+        name: 'superlative',
+        value: 'I like turtles'
+      },
+      preventDefault: jest.fn()
+    }
+    const expected = {
+      name: '',
+      quote: '',
+      superlative: 'I like turtles'
+    }
+    wrapper.instance().handleChange(mockEvent)
+    expect(wrapper.state()).toEqual(expected)
+  })
+
+  it('handleAdd should run on form submit', () => {
+    const spy = jest.spyOn(wrapper.instance(), 'handleAdd');
+    const mockEvent = {
+      target: {
+        type: 'submit',
+        value: 'Submit'
+      },
+      preventDefault: jest.fn()
+    }
+    expect(spy).not.toHaveBeenCalled()
+    wrapper.instance().handleAdd(mockEvent)
+    expect(spy).toHaveBeenCalled()
   })
 
 }) 

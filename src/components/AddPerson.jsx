@@ -24,10 +24,8 @@ constructor(props) {
 
   render() {
     return(
-      <section 
-        className='add-box' 
-          onSubmit={this.handleAdd}>
-        <form action='add person'>
+      <section className='add-box'>
+        <form action='add person' onSubmit={this.handleAdd}>
           <label htmlFor="name" >Name</label>
           <input 
             type='text' 
