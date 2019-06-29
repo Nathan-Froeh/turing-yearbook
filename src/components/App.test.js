@@ -37,4 +37,10 @@ describe('App', () => {
     expect(wrapper.state()).toEqual(expected2)
   })
 
+  it('handleAdd should toggle isHidden', () => {
+    expect(wrapper.state('isHidden')).toEqual(true)
+    wrapper.instance().handleAdd()
+    expect(wrapper.state('isHidden')).toEqual(false)
+  })
+
 })
