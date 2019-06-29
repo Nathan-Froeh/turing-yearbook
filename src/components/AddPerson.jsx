@@ -30,7 +30,7 @@ constructor(props) {
         <form action='add person'>
           <label htmlFor="name" >Name</label>
           <input 
-           type='text' 
+            type='text' 
             name='name' 
             id='name' 
             onChange={this.handleChange}
