@@ -32,10 +32,10 @@ class App extends Component {
     this.setState({isHidden: !this.state.isHidden})
   }
 
-  addStudent = (name, quote, superlative) => {
+  addStudent = (name, quote, superlative, id) => {
 
     this.state.group.push({
-      id: Date.now(), 
+      id: id, 
       name: name, 
       quote: quote, 
       superlative: superlative, 
@@ -54,12 +54,12 @@ class App extends Component {
         <h1>Turing Yearbook</h1>
         <div className='selectors'>
           <button 
-            className='group-selector' 
+            className='group-selector staff' 
             onClick={()=>this.setGroup('staff')}>
             Staff
           </button>
           <button 
-            className='group-selector' 
+            className='group-selector students' 
             onClick={()=>this.setGroup('students')}>
             Students
           </button>

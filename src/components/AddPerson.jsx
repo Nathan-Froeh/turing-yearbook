@@ -18,7 +18,7 @@ constructor(props) {
   handleAdd = (e) => {
     e.preventDefault()
     const {name, quote, superlative} = this.state
-    this.props.addStudent(name, quote, superlative)
+    this.props.addStudent(name, quote, superlative, Date.now())
     this.props.hide()
   }
 
