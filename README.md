@@ -5,7 +5,7 @@
 
 Turing Yearbook is the first project exposure to React, Jest, and Enzyme. We started off with a dataset and `create-react-app` as well as a few bugs from the get go and were expected to build out the yearbook as a solo project in 7 days. 
 
-You can choose between students and staff to view, and add a student or staff member. This app has 100% test coverage!
+You can choose between students and staff to view, and add a student or staff member. This app has 96% test coverage!
 Check out the comp [here](http://frontend.turing.io/projects/turing-yearbook.html)
 
 ### Set Up
@@ -21,3 +21,4 @@ Clone down this repo.
 ![Staff tab](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.08%20AM.png)
 ![Student tab](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.18%20AM.png)
 ![Add new Staff/Student](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.29%20AM.png)
+![Test coverage chart](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%208.12.32%20AM.png)
