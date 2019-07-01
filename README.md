@@ -18,6 +18,6 @@ Clone down this repo.
 4. Run `npm start` to start up your React server. (You will see errors!)
 
 
-![alt text](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.08%20AM.png)
-![alt text](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.18%20AM.png)
-![alt text](http://url/to/img.png)
+![Staff tab](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.08%20AM.png)
+![Student tab](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.18%20AM.png)
+![Add new Staff/Student](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.29%20AM.png)
