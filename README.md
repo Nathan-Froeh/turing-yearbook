@@ -18,3 +18,6 @@ Clone down this repo.
 4. Run `npm start` to start up your React server. (You will see errors!)
 
 
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
+![alt text](http://url/to/img.png)
