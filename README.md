@@ -19,5 +19,5 @@ Clone down this repo.
 
 
 ![alt text](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.08%20AM.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Nathan-Froeh/turing-yearbook/blob/master/Screen%20Shot%202019-07-01%20at%207.42.18%20AM.png)
 ![alt text](http://url/to/img.png)
